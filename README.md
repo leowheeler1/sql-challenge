@@ -5,11 +5,13 @@ This challenge involves modeling, engineering, and analyzing data using an ERD a
 ## Modeling
 
 To model the data, QuickDBD was used, and the chart can be seen below:
+
 ![ERD for Challenge Data](EmployeeSQL/ERD/sqlchallenge_erd.png)
 
+Code to recreate this can be found in `EmployeeSQL/ERD/mod9erd`.
 ## Engineering
 
-The ERD was then used to create the schema for my database. This makes it easy to visualize where foreign keys relate to, and which order tables need to be built in. After establishing an order, creating the tables and importing the data was smooth sailing. After importing all data, I added some serial ID counters to the tables which did not already have their own primary key (in the case of dept_emp.csv and dept_manager.csv, both columns were foreign keys so a primary key had to be added) and then ensured it was all imported correctly. The schema can be found in `schema.sql`. After establishing that the data was usable, I moved on to analysis. 
+The ERD was then used to create the schema for my database. While QuickDBD does have an output feature to build a schema around your ERD, I chose to create the schema from scratch. This allows greater control over all of the variables in making a table, and a deeper understanding for the structure of the database. Using the ERD makes it easy to visualize where foreign keys relate to, and which order tables need to be built in. After establishing an order, creating the tables and importing the data was smooth sailing. After importing all data, I added some serial ID counters to the tables which did not already have their own primary key (in the case of `dept_emp.csv` and `dept_manager.csv`, both columns were foreign keys so a primary key had to be added) and then ensured it was all imported correctly. The schema can be found in `schema.sql`. After establishing that the data was usable, I moved on to analysis. 
 
 ## Analysis
 
